@@ -6,7 +6,7 @@
 
 Установка через composer
 ```
-composer require lovat/vatcompliance
+composer require vatcompliance/vatcompliance
 ```
 
 Пример использования
