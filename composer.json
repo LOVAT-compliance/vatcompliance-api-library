@@ -1,0 +1,22 @@
+{
+  "name": "vatcompliance/vatcompliance",
+  "description": "Vatcompliance.API Client for PHP",
+  "keywords": [
+    "vatcompliance",
+    "api"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vatcompliance"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "VatCompliance\\": "lib/"
+    }
+  }
+}
