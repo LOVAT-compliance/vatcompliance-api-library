@@ -40,4 +40,10 @@ class Omp extends Client
 		$this->setParams($params, 'GET', '/omp/report');
 		return $this->buildRequest();
 	}
+
+	public function ompInvoice($params)
+	{
+		$this->setParams($params, 'POST', '/omp/omp_invoice');
+		return $this->buildRequest();
+	}
 }
