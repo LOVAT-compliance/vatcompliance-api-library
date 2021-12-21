@@ -1,15 +1,15 @@
-# vatcompliance api php library
+# Vatcompliance api php library
 
-## Установка плагина
+## Plugin install
 
-Офицальная документация находится [Здесь](https://developers.vatcompliance.co/omp-tax-rate-api/)
+The official documentation is located [here](https://developers.vatcompliance.co/omp-tax-rate-api/)
 
-Установка через composer
+## Getting Started
 ```
 composer require vatcompliance/vatcompliance
 ```
 
-Пример использования
+## Example
 ```
 include __DIR__ . '/vendor/autoload.php';
 
@@ -35,10 +35,76 @@ $result = $omp->merchantSend(
 );
 ```
 
-Если вы видите в методе POST ?if_digital={true/false}&if_vat_calculate={true/false} задайте данный параметр в массиве как:
+If you see in method POST GET params `?if_digital={true/false}&if_vat_calculate={true/false}` set the given parameter in the array as:
 ```
 	'getParams' => array(
 		'if_digital' => 'true/false',
 		'if_vat_calculate' => 'true/false'
 	)
+```
+
+## OMP Feed API methods
+
+#### Definition
+
+Omp feed
+```
+$omp = new Omp('__ACCESS KEY__');
+$omp->feed
+```
+
+Omp Tax Rate
+
+```
+$omp = new Omp('__ACCESS KEY__');
+$omp->taxRate()
+```
+
+Omp Report Create
+
+```
+$omp = new Omp('__ACCESS KEY__');
+$omp->reportCreate()
+```
+
+Get Status
+```
+$omp = new Omp('__ACCESS KEY__');
+$omp->getStatus()
+```
+
+Get Report
+
+```
+$omp = new Omp('__ACCESS KEY__');
+$omp->getReport()
+```
+
+Omp Invoice
+
+```
+$omp = new Omp('__ACCESS KEY__');
+$omp->ompInvoice()
+```
+
+## Omp Merchant Api
+
+Merchant feed
+
+```
+$merchant = new Merchant('__ACCESS KEY__');
+$merchant->merchantSend()
+```
+
+Merchant Tax Rate
+
+```
+$merchant = new Merchant('__ACCESS KEY__');
+$merchant->taxRate()
+```
+
+Merchant Vat Checker
+```
+$merchant = new Merchant('__ACCESS KEY__');
+$merchant->vatChecker()
 ```
