@@ -2,7 +2,7 @@
 
 ## Plugin install
 
-The official documentation is located [here](https://developers.vatcompliance.co/omp-tax-rate-api/)
+The official documentation is located [here](https://developers.lappa.org/omp-tax-rate-api/)
 
 ## Getting Started
 ```

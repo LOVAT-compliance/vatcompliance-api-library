@@ -8,7 +8,7 @@ class Omp extends Client
 	public function __construct($token)
 	{
 		parent::__construct($token);
-		$this->url = 'https://omp.vatcompliance.co/api';
+		$this->url = 'https://api.lappa.org/api';
 	}
 
 	public function feed($params)

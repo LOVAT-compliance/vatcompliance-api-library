@@ -8,7 +8,7 @@ class Merchant extends Client
 	public function __construct($token)
 	{
 		parent::__construct($token);
-		$this->url = 'https://merchant.vatcompliance.co/api';
+		$this->url = 'https://api.lappa.org/api';
 	}
 
 	public function merchantSend($params)
